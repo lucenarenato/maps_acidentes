@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Renato Lucena - Programador PHP">
+        <meta name="author" content="Renato Lucena-Programador PHP">
+        <link rel="next" href="http://renatolucena.net"/>
+        <title>Mapa e pontos de acidentes</title>
+        <script src="assets/loading/pace.min.js"></script>
+        <link href="assets/loading/pace-minimal.css" rel="stylesheet" />
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
+        <style type="text/css">
+        
+        #footer {
+            font-family: 'Roboto', sans-serif;
+            color: #000;
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        
+        #img {
+            -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+            filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+            padding: 15px;
+            text-align: center;
+        }
+        .background {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+        }
+        h2.headertekst {
+          text-align: center;
+        }
+        #outer {
+          position: relative;
+          width: 100%;
+        }
+
+        #mapa{
+          left: 50%;
+          position: relative;
+          transform: translateX(-50%);
+        }
+        
+    </style>
+
+    </head>
+ 
+    <body>
+        <div class="container">
+            <br>
+            <h2 class="headertekst">Base de acidentes da PRF e Detran nas estradas no ano de 2017.</h2>
+        	<div id="outer">  
+                <div id="mapa" style="height: 700px; width: 700px"></div>
+            </div>
+            <hr></hr>
+            <div class="footer" style="padding-top: 50px">
+                <center>
+                    <h4 id="titulo1">LINGUAGENS E FRAMEWORKS MAIS UTILIZADOS</h4>
+                </center>
+                <div class="row justify-content-md-center">
+                    
+                    <div id="img">
+                        <img src="img/marcas/mysql.png" width="80px" height="80px">
+                    </div>
+                    <div id="img">
+                        <img src="img/marcas/html.png" width="80px" height="80px">
+                    </div>
+                    <div id="img">
+                        <img src="img/marcas/bootstrap.png" width="80px" height="80px">
+                    </div>
+                    <div id="img">
+                        <img src="img/marcas/php.png" width="80px" height="80px">
+                    </div>
+                    <div id="img">
+                        <img src="img/marcas/js.png" width="80px" height="80px">
+                    </div>
+                    <div id="img">
+                        <img src="img/marcas/post.png" width="80px" height="80px">
+                    </div>
+                    <div id="img">
+                        <img src="img/marcas/wordpress.png" width="80px" height="80px">
+                    </div>
+                    <div id="img">
+                        <img src="img/marcas/ionic.png" width="80px" height="80px">
+                    </div>
+                    <div id="img">
+                        <img src="img/marcas/css.png" width="80px" height="80px">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+		<hr></hr>
+        <footer>
+            <center>
+            <h4 id="footer">&copy; Renato Lucena - Todos os Direitos Reservados ® - 2019</h4>
+            </center>
+        </footer>
+		<script src="js/jquery.min.js"></script>
+ 
+        <!-- Maps API Javascript -->
+        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDyiJZxBV-z06iON7cwxGnGhuUneXIqyG0&amp;sensor=false"></script>
+        <!-- <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> -->
+        
+        <!-- Caixa de informação -->
+        <script src="js/infobox.js"></script>
+		
+        <!-- Agrupamento dos marcadores -->
+		<script src="js/markerclusterer.js"></script>
+ 
+        <!-- Arquivo de inicialização do mapa -->
+		<script src="js/mapa.js"></script>
+
+    </body>
+</html>
